@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
     isThrottled = true;
     setTimeout(() => {
       isThrottled = false;
-    }, 200);
+    }, 3000);
   }
 });
 
