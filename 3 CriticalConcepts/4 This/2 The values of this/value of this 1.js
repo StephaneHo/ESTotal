@@ -13,6 +13,6 @@ const obj = {
   getTheValueOfThis: getTheValueOfThis,
 };
 
-// console.log
-// obj => we get the object
-//  obj.getTheValueOfThis and we get the object
+// show console.log for:
+//  1- obj => we get the object
+//  2- obj.getTheValueOfThis() and we get the this of the object

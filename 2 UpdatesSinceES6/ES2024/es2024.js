@@ -36,6 +36,7 @@ console.log(result);
 
 // Temporal
 // Temporal is currently in stage 3 (almost finished) in the 2024 proposal."
+// https://tc39.es/proposal-temporal/tc39.es/proposal-temporal/
 
 /* JavaScript Date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC. However, there are some problems with the current JavaScript Date implementation.
 
@@ -54,7 +55,8 @@ No support for non-Gregorian calendars. */
 // It uses the current date and time from the timezone you pass to the method,
 // or your current local timezone if no timezone is passed to the method.
 
-// https://stackblitz.com/edit/typescript-acfnhb?file=index.ts
+// use this sandbox
+//  to use Temporal: https://stackblitz.com/edit/typescript-acfnhb?file=index.ts
 import { Temporal } from "@js-temporal/polyfill";
 
 const today = Temporal.Now.plainDateTimeISO();

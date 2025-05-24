@@ -1,0 +1,17 @@
+// previously: notice that var i is on the global scope
+// by the time we get to the last iteration, i is imncremented, i is 6
+// once 3 seconds have passed, fx placed in the queue, gets picked by the event loop amd placed in the stack
+// but i is 6 so cities[6] is undefined
+// we want to set up closure so we set up over a variable that can be used
+// by setting up a fx, we define a new scope so the closure is handled for that scope
+
+const cities = ["Paris", "Lisbon", "Tokyo", "Madrid", "Oslo", "Tokyo"];
+
+for (var i = 0; i < cities.length; i++) {
+  // because of closure, when showCity fires, it will have access to this city variable
+  function showCity() {
+    let city = cities[i];
+    setTimeout(() => console.log(city), 3000);
+  }
+  showCity();
+}

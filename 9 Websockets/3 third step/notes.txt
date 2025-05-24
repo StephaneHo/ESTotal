@@ -1,0 +1,9 @@
+ChatUser: utility class
+Room.js: has brodacast method
+iterates over the members and send the date to them
+
+when you hit the route  /chat/:rootName, you open a ws the first time
+
+app.js
+
+when we get a message for this ws, call user.handleMessage()

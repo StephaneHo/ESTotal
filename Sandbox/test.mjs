@@ -1,9 +1,5 @@
-let user1 = { id: 1, name: "Jean" };
-let user2 = { id: 2, name: "Paul" };
+const arr = ["a", "b"];
+console.log(arr.slice(0, 0));
 
-function test() {
-  console.log(user1);
-  setTimeout(() => console.log("time out !", 0));
-  console.log(user2);
-}
-test();
+const arr2 = ["a"];
+console.log(arr2.join("\n"));

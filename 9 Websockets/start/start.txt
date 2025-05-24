@@ -1,0 +1,3 @@
+server up and running
+go to http://localhost:3000/anything
+check that you have "this is a websocket" in the console

@@ -1,0 +1,9 @@
+establish permament conenction between client and server
+permament and bidirectionnal
+like a tunnel
+useful when exchanging live data (live tracking, chat applications, ...)
+
+
+we are going to build a chat application
+
+app.js is the backend
