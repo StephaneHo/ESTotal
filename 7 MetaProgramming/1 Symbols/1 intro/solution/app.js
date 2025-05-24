@@ -15,7 +15,7 @@ console.log(myuid === uid2Other); // false
 // alert(uid2.toString()) works
 
 // get the identification criteria
-console.log(myuid.description);
+console.log("description : " + myuid.description);
 
 let person = {
   id: "id1",
@@ -36,7 +36,7 @@ person = {
   age: 30,
 };
 
-console.log(person);
+console.log({ person });
 
 // if you export the object but you do not export the symbol, the consumer cannot interfere with the internal ID
 // even if you try to recreate the symbol as a consumer, it won't work (uniquenss guarantee)
@@ -47,7 +47,7 @@ for (let key in person) {
   console.log(key);
 }
 // ignored also by Object.keys
-console.log(Object.keys(person));
+console.log("keys: " + Object.keys(person));
 // it is the princip of hiding symbol properties: if another script or library reads our object, it won't by accident access to a symbol property
 
 // the IDEA: Symbol is a unique identifier that cannot be accidently overriden, only if you have access to the original symbol (not a copy of it), you can change it
